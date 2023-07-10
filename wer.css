@@ -1,0 +1,12 @@
+@import url(body.css);
+@import url(menu.css);
+@import url(head.css);
+@import url(service.css);
+@import url(projects.css);
+@import url(card.css);
+@import url(contacts.css);
+@media  (max-width: 1380) {
+  .footer-table {
+     min-width: 80%;
+  }
+}

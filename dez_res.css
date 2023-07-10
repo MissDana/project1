@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+
+
+  /*PROJECT*/
+
+
+body {
+    background: #e2d2d2;
+    background: linear-gradient(45deg, #fff, #ffe0b1);
+    min-height: 100vh;
+}
+
+h3 {
+    background-color:rgb(246, 190, 59);
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin: 30px 30px
+}
+h4 {
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-left: 160px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px;
+    background-color: lemonchiffon;
+    overflow: hidden;
+}
+
+.slider__slides {
+  width: 100%;
+  padding-top: 66%;
+}
+
+.slider__slide {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lemonchiffon;
+    transition: 1s;
+    opacity: 0;
+}
+
+.slider__slide.active {
+    opacity: 1;
+}
+
+.slider__slide img {
+  width: 100%;
+}
+
+.slider__nav-button {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #333;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#nav-button--prev {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#nav-button--next {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#nav-button--prev::after,
+#nav-button--next::after {
+    content: "";
+    position: absolute;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    width: 40%;
+    height: 40%;
+}
+
+#nav-button--next::after{
+    top: 50%;
+    right: 50%;
+    transform: translate(25%, -50%) rotate(-45deg);
+}
+
+#nav-button--prev::after {
+    top: 50%;
+    right: 50%;
+    transform: translate(75%, -50%) rotate(135deg);
+}
+
+.slider__nav {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.slider__navlink {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: #333;
+    opacity: 1;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.slider__navlink.active {
+    background-color: #fff;
+    border: 1px #333 solid;
+}
+
+
+@media screen and (max-width: 640px) {
+  .slider__nav-button {
+    height: 40px;
+    width: 40px;
+  }
+  .slider__navlink {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+
+/*TEAM*/
+.team {
+    height: 560px;
+}
+#text_tm {
+    margin-top: 120px;
+    font-size: 40px;
+    text-align: right;
+    margin-right: 860px;
+    background-color: rgba(246, 190, 59, .7);
+}
+.team_div img {
+    margin-top: 70px;
+    margin-left: 190px;
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+}
+.team_div-2 {
+    background-color: rgba(246, 190, 59, .7);
+    padding: 20px;
+    width: 600px;
+    text-align: right;
+    margin-left: 750px;
+    margin-top: -310px;
+    font-size: 22px;
+}
+#tea_p {
+    margin-top: 18px;
+    text-align: right;
+    margin-right: 100px;
+    font-size: 32px;
+}
+
+
+
+
+/*ZAKAZ*/
+
+.pop_up_body {
+    margin-top: 80px;
+    width: 1500px;
+    height: 560px;
+    background-color: #f2eded;
+}
+p {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0px;
+}
+.pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 338px;
+    padding: 17px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+.pop_up_body input:focus {
+    outline: none;
+}
+textarea {
+    margin-left: 560px;
+}
+button {
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: orange;
+}

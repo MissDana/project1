@@ -1,0 +1,21 @@
+.cover {
+    background-position: center;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/1400/c9f65f42891393.57db4f71e421c.jpg);
+    background-size: cover;
+    padding: 100px 20%;
+    border: 1px solid rgb(200, 194, 194);
+    border-radius: 5px;
+}
+#text_1p {
+    font-size: 1.3rem;
+}
+.cover-dimmer {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 40px;
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    margin-top: -8px;
+    margin-bottom: .25rem;
+}

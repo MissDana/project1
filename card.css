@@ -1,0 +1,189 @@
+.ACHIEVEMENTS {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    margin-left: 30px;
+    width: 320px;
+    height: 400px;
+    background-color: rgb(246, 190, 59);
+    color: #000;
+    border-radius: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+  }
+  #card-1 {
+    margin-left: 100px;
+  }
+  #card-2 {
+     margin-left: 580px;
+     margin-top: -400px;
+  }
+  #card-3 {
+    margin-left: 1060px;
+    margin-top: -400px;
+  }
+
+  .card::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(195, 136, 0);
+    transform: skewY(345deg);
+    position: absolute;
+    top: -50%;
+  
+    transition: .5s;
+  }
+  .card:hover::before {
+    transform: skewY(390deg);
+    top: -70%;
+  }
+  .card_img {
+    margin-top: 30px;
+    width: 210px;
+    height: 170px;
+    position: relative;
+    transition: .5s;
+  }
+  .card:hover .card_img {
+    width: -90%;
+    height: -90%;
+  }
+  .card_name {
+    font-size: 24px;
+    margin: 0 0 10px;
+    position: relative;
+  }
+  .card_price {
+    font-size: 18px;
+    margin: 0 0 30px;
+    position: relative;
+  }
+  .card_butt {
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 15px 50px;
+    border-radius: 30px;
+    color: inherit;
+    text-transform: inherit;
+    font-weight: inherit;
+    transition: .5s;
+    top: 100px;
+  }
+  .card:hover .card_butt {
+      top: 0;
+  }
+  #card_p {
+    color: rgb(191, 5, 5);
+  }
+  #card_p:hover {
+    color: #FFF;
+  }
+  .card_butt:hover {
+    background-color: rgb(130, 4, 4);
+  }
+  a {
+    text-decoration: none;
+  }
+
+
+  
+.modal-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal {
+    padding: 20px;
+	background-color: #fff;
+	width: 400px;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	display: none;
+    border-radius: 17px;
+}
+
+ul {
+    font-size: 20px;
+    margin-bottom: 23px;
+}
+li {
+    margin-bottom: 9px;
+}
+
+#modd_p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 29px;
+    font-style: inherit;
+    margin-bottom: 9px;
+}
+#modd_p-1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: inherit;
+    margin-bottom: 20px;
+}
+#modd_p-3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: inherit;
+    margin-bottom: 20px;
+}
+
+#mod_prici-1 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#mod_prici {
+    font-weight: bold;
+    font-size: 24px;
+}
+#zakaz {
+    margin-left: 20%;
+    margin-top: 30px;
+    font-size: 30px;
+    background-color: rgb(246, 190, 59);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    color: inherit;
+    text-transform: inherit;
+    font-weight: inherit;
+}
+
+#zak {
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-overlay--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal--visible {
+	display: block;
+}
